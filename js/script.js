@@ -2074,4 +2074,116 @@ find total and avergae
 //           primitive data types and non primitive data types
 
 
+//                Primitive data types
+//   var a = 5;
+//   var b = 6;
 
+
+//   b=a;
+//   console.log(a);
+//   console.log(b);
+
+//   a=10;
+//   console.log(a);
+//   console.log(b);
+
+
+//              Non Primitive data types
+
+
+
+//objects , array
+
+
+//    a = [1,2,3,4,5];
+//    b=a;
+//    console.log(a);
+//    console.log(b);
+//    a.push(1,2);
+//    console.log(a);
+//    console.log(b);
+
+//    a.unshift(1);
+//    console.log(a);
+
+
+// let users = {name:"Kavippiriyan",age:22};
+
+// let user1 = users
+
+// console.log(user1);
+// console.log(users);
+
+// user1.name="Kavippiriyan S"
+// console.log(user1);
+// console.log(users);
+
+
+//       object clone
+
+
+// let num = {a:1,b:2,c:3};
+// let num1 = {d:4,e:5,f:6};
+
+
+// let num2 = Object.assign({},num,num1);
+// console.log(num2);
+// num1.d=9;
+// console.log(num2);
+// console.log(num1);
+
+
+// using spread operator
+
+
+// let obj = {a:1,b:2,c:3};
+// let obj1 = {d:4,e:5,f:6};
+
+// let obj2 = {...obj,...obj1};
+// console.log(obj2);
+
+// a=[1,2,3,4,5];
+
+// let b = [...a];//spread operator
+// let c= a.slice();//slice method
+// let d =[].concat(a);//concat method
+// let e = Array.from(a)
+// console.log(b);
+// console.log(c);
+// console.log(d);
+// console.log(e);
+
+
+// =====================================================================================================================
+
+
+//                  Const variable in array
+
+
+// const a = 5;
+// console.log(a);
+
+// // a=10;
+// // console.log(a);
+
+
+// const arr = [10,20,30,40];
+// console.log(arr);
+// arr.push(50); // Here we are only modify not assigning modify is possible assigning is not possible
+// console.log(arr);
+// arr = [60];//we can't assign
+
+
+
+
+
+const user = {
+    fruitName:"apple",
+    kg:25,
+    amount:2500,
+    fname:function()
+    {
+        return this.amount
+    }
+}
+console.log(user);
