@@ -1979,3 +1979,99 @@ find total and avergae
 // a.push(0,3,0,4);
 
 // console.log(a);
+
+// var names = ["keerthana","swetha","mounika","vedika"];
+
+// // names.push("anushka","swathi");
+
+// // console.log(names);
+
+// let names1 = ["hansika","pavithra"];
+
+// names.push(...names1);
+// console.log(names);
+
+// ============= ========================= ======================== =================== ============
+
+
+//             pop  ,     shift ,  unshift , indexof ,  every , some
+  
+
+// pop is used to remove the last element
+
+// var names = ["keerthana","swetha","mounika","vedika"];
+
+// console.log(names);
+// console.log(names.pop());
+// console.log(names);
+
+
+// shift is used to remove the first element
+// var names = ["keerthana","swetha","mounika","vedika"];
+
+// names.shift();
+// console.log(names);
+
+//      unshift
+//     used to add the first element
+
+
+// var names = ["keerthana","swetha","mounika","vedika"];
+
+// names.unshift("deepika","durka");
+// console.log(names);
+
+
+// indexof  find the index using elements
+
+
+// var names = ["keerthana","swetha","mounika","vedika"];
+
+// console.log(names.indexOf("swetha"));
+
+// a=[1,2,3,45,6,2,9,7,1,6,7,45];
+// console.log(a.indexOf(2));
+
+
+// console.log(a.indexOf(6,5));
+
+// console.log(a.lastIndexOf(7));
+
+
+
+// every - all condition will satisfy only the outcome will true (and gate)
+// var even_num = [10,20,30,40,50,60];
+
+// let even = even_num.every((value)=>
+// {
+//     return value%2==0;
+// })
+
+// // some is like or gate
+// console.log("All numbers in the array is even?"+even);
+
+// var even_num = [11,20,30,40,59,69];
+// let even1 = even_num.some((value)=>
+// {
+//     return value%2==0;
+// })
+
+// console.log("All numbers in the array is even?"+even1);
+
+
+// var even_num = [11,21,31,41,59,69];
+// let even2 = even_num.some((value)=>
+// {
+//     return value%2==0;
+// })
+
+// console.log("All numbers in the array is even?"+even2);
+
+
+// =======================================================================================================================
+
+
+//           primitive data types and non primitive data types
+
+
+
