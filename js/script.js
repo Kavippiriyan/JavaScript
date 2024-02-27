@@ -2177,13 +2177,347 @@ find total and avergae
 
 
 
-const user = {
-    fruitName:"apple",
-    kg:25,
-    amount:2500,
-    fname:function()
-    {
-        return this.amount
-    }
-}
-console.log(user);
+// const user = {
+//     fruitName:"apple",
+//     kg:25,
+//     amount:2500,
+//     fname:function()
+//     {
+//         return this.fruitName
+//     },
+
+// }
+// console.log(user);
+// console.log(user.fname());
+
+// function users(name,age,city)
+// {
+//    const user={};
+//     user.name=name,
+//     user.age = age,
+//     user.city = city
+
+//     user.about = function()
+//     {
+//         return user.name
+//     }
+//     return user;
+// }
+// console.log(users("kavippiriyan",22,"nasiyanur"));
+
+
+//  Factory function
+
+// const user_method ={
+//     about:function()
+// {
+//     return `${this.name}`
+// }
+
+// };
+
+// function users(name,age,city)
+// {
+//    const user={};
+//     user.name=name,
+//     user.age = age,
+//     user.city = city
+
+//     user.about = user_method.about
+//     return user;
+// }
+
+// console.log(users("hi",22,"mumbai"))
+
+
+// prototype inheritance
+
+
+// const user_method ={
+//     about:function()
+// {
+//     return `${this.name}`
+// }
+
+// };
+
+// function users(name,age,city)
+// {
+//    const user=Object.create(user_method);
+//     user.name=name,
+//     user.age = age,
+//     user.city = city
+
+//     return user;
+// }
+
+// console.log(users("hi",22,"mumbai"))
+
+
+// const a = {key:"value1"}
+// const b = {key:"value2"}
+
+// const c =Object.create(a);
+// console.log(c);
+
+// c.key="value11"
+// console.log(c);
+
+// = = = ======================= ======================= =========================== ========================== ======
+
+//              optional chaining  [important for finding the data's]  xxxxx
+
+
+
+// let user = {username:"vijat",address:"erode"};
+// let user1 = {username:"vijat",address:{city:"erode"}};
+
+
+// console.log(user.address?user.address:undefined)
+
+// user = {username:"vijat"};
+
+
+// console.log(user.address?user.address:undefined);
+// console.log(user1.address?.city);
+
+
+
+
+// const customer = {
+//     name:"kavippiriyan",
+//     bank_name:"IOB",
+//     bank_details:{
+//         ifsc_code:"IOB28794561",
+//         branch:"nasiyanur",
+//         customer_details:{
+//             dob:"09/10/2001",
+//             ph:"9344361040"
+//         }
+//     }
+// }
+
+// console.log(customer);
+
+
+// // Here i want custmer mobile number 
+
+// console.log("Customer Mobile Number : "+customer.bank_details.customer_details.ph);
+
+// console.log(customer.bank_details?.customer_details?.ph)
+
+
+//============================= ================================== ============================= ========================
+
+//              Function Inside object
+
+// console.log(this);
+
+// function add()
+// {
+//     a=45
+//     console.log(this.a);
+    
+// }
+// add();
+
+// function add()
+// {
+//     a=45
+//     console.log(this.a);
+//     function sub()
+//     {
+//         console.log(this.a);
+//     }
+//     sub()
+// }
+// add();
+
+// id=45;
+
+//     const employees =
+//     {
+//         id:25,
+//         empname:"thiyagu",
+//         empnum:"9356874158",
+        
+//         empid:function()
+//         {
+//             console.log(this.id);
+
+//             empid1:function f()
+//             {
+//                 console.log(this.id);
+//             }
+//             f()
+//         },
+        
+       
+//     }
+    
+
+// employees.empid();
+
+// id=45;
+
+//     const employees =
+//     {
+//         id:25,
+//         empname:"thiyagu",
+//         empnum:"9356874158",
+        
+//         empid:function()
+//         {
+//             console.log(this.id);
+
+//             empid1:function f()
+//             {
+//                 console.log(this.id);
+//             }
+//             f();
+
+//             empid2 = ()=>
+//             {
+//                 console.log(this.id);
+//             }
+//             empid2()
+//         },
+        
+       
+//     }
+    
+
+// employees.empid();
+
+
+//  ======================= =======================  ==================== ====================== ============= ======
+
+//       Destructuring Assignment
+
+//      Array Destructuring
+// numbers = [1,2,3,4,5];
+
+// num1 = numbers[0];
+// num2 = numbers[1];
+// num3 = numbers.slice(2);
+// console.log(num1);
+// console.log(num2);
+// console.log(num3);
+
+
+
+// var [first,second,...rest]=numbers;
+// console.log(first);
+// console.log(second);
+// console.log(rest);
+
+// Array Destructuring
+
+
+// const fruit ={
+//     name:"banana",
+//     rate : 100,
+//     color : "yellow",
+// }
+
+// console.log(fruit);
+// const {name,rate,color}=fruit;
+
+
+// console.log(name);
+// console.log(rate);
+// console.log(color);
+
+
+// a=[8, 9];
+
+// const [b=8,c=9,d=10]=a;
+
+// console.log(b);
+// console.log(c);
+// console.log(d);
+
+
+// const fruit ={
+//     name:"banana",
+//     rate : 100,
+//     color : "yellow",
+// }
+
+// console.log(fruit);
+// const {name,rate,color,kg=1}=fruit;
+
+
+// console.log(name);
+// console.log(rate);
+// console.log(color);
+// console.log(kg);
+
+
+//   swapping 
+
+// a=5;
+// b=6;
+
+// [a,b]=[b,a];
+// console.log(a);
+// console.log(b);
+
+
+//    skip
+
+
+// c=[1,2,3,4,5];
+
+// const[a,,,,b]=c;
+// console.log(a);
+// console.log(b);
+
+// nested destructuring
+
+
+// a = [1,[2,3,[4,5]]];
+
+// [b,[c,d,[e,f]]]=a;
+
+// console.log(b);
+// console.log(c);
+// console.log(d);
+// console.log(e);
+// console.log(f);
+
+
+
+// const users = {
+//     user1:"kavi",
+//     user2:{
+//         user3:"kavi1"
+
+//     }
+// }
+
+// const {user1,user2:{user3}}=users;
+
+// console.log(user1);
+// console.log(user3);
+
+
+// const customer = [
+//     {
+//         cus_name:"Praveen",
+//         cus_num :"98648743311",
+//         details:{
+//                 native:"Mettur"
+//         },
+//         cus_vechicle:{
+//             vec_name:"Mastero",
+//             vec_model:"2012"
+//         }
+//     }
+// ]
+
+// const[{cus_name,details:{native},cus_vechicle:{vec_name}}]=customer;
+
+// console.log(cus_name);
+// console.log(native);
+// console.log(vec_name);
