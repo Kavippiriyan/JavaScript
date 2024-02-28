@@ -2521,3 +2521,239 @@ find total and avergae
 // console.log(cus_name);
 // console.log(native);
 // console.log(vec_name);
+
+//  ================================================================== =  ==================================== =======
+
+
+//         creating object
+
+
+//      using object literals
+
+
+// const users ={
+//     name:"kavi",
+//     age:22,
+//     native:"Erode"
+// }
+
+// console.log(users);
+
+//  using object constructor
+
+
+// const users = new Object();
+
+// users.name="kavi",
+// users.age = 22,
+// users.native = "Erode"
+
+// console.log(users);
+
+
+//  using object create method
+
+
+// const prototype = {
+//     hi:function ()
+//     {
+//         console.log("hi")
+//     }
+// }
+
+
+// const users = Object.create(prototype);
+
+// users.name="Kavi",
+// users.age = 22,
+// users.native = "nasiyanur"
+
+// console.log(users);
+// users.hi();
+
+
+
+//   using class
+
+// class Fruit
+// {
+//     constructor(name,color,taste)
+//     {
+//         console.log("name of the fruit: ",this.name=name);
+//         console.log("color of the fruit: ",this.color=color);
+//         console.log("taste of the fruit: ",this.taste=taste);
+//     }
+// }
+
+// const fruit = new Fruit("apple","red","sweet");
+
+//  ================================================ ============================== ================================
+
+
+//       dot notation   bracket notation
+
+
+
+// user = {
+//     name:"kavi",
+//     age:22,
+//     native:"nasiyanur"
+
+// }
+
+// console.log(user.name);
+// console.log(user.age);
+// console.log(user.native);
+
+// console.log(user["name"]);
+// console.log(user["age"]);
+// console.log(user["native"]);
+
+
+
+//  ======================================== ================================ =====================================
+
+// Iterating through javascript objects
+
+
+//for loop
+
+// user = {
+//     name:"kavi",
+//     age:22,
+//     native:"nasiyanur"
+
+// };
+
+// for(i in user)
+// {
+//     console.log(i,":",user[i]);
+// }
+
+
+// objects.keys
+
+
+// user = {
+//     name:"kavi",
+//     age:22,
+//     native:"nasiyanur"
+
+// };
+
+
+// const keys = Object.keys(user);
+
+// console.log(keys);
+
+
+//  objects.values
+
+
+// user = {
+//     name:"kavi",
+//     age:22,
+//     native:"nasiyanur"
+
+// };
+
+// const values = Object.values(user);
+
+// console.log(values);
+
+
+//  object entries
+
+
+// user = {
+//     name:"kavi",
+//     age:22,
+//     native:"nasiyanur"
+
+// };
+
+
+// const entries = Object.entries(user);
+// console.log(entries);
+
+
+
+// ======================================== ========================== ========================= ======================
+
+
+//            call , apply  , bind
+
+
+// name = "kavippiriyan";
+
+// function a ()
+// {
+//     console.log(this.name);
+// }
+// a();
+
+
+// function a ()
+// {
+//     console.log(this.username);
+// }
+// a();
+
+// names = {username:"kavippiriyan"};
+
+// a.call(names);
+
+// names = {name:"kavippiriyan"};
+// function add(a,b)
+// {
+//     console.log(this.name+" "+a+b);
+// }
+
+// add(2,5);
+
+// add.call(names,2,5);
+
+
+// function add(a,b)
+// {
+//     console.log(this.name+" "+(a+b));
+// }
+// add(1,2);
+
+// console.log(this);
+// student = {name:"kavippiriyan"};
+// add.call(student,1,2);
+
+// username = "kavippiriyan";
+// function add1(a,b)
+// {
+//     console.log(this.username+" "+(a+b));
+// }
+// add1(1,2);
+
+// username = {username:"kavippiriyan"};
+// add1.call(username,1,2);
+
+// let apply = [5,10];
+// add1.apply(username,apply);
+
+
+// function sub(a,b)
+// {
+//     console.log(this.name+" "+(a+b));
+// };
+
+// sub(5,5);
+// user ={name:"kavin"}
+// const binding = sub.bind(user,1,4);
+// console.log(binding)
+// binding();
+
+
+
+function mul(a,b)
+{
+    console.log(this.name+" got this marks in english :"+(a-b));
+}
+
+mul(50,30);
