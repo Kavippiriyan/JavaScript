@@ -2751,9 +2751,232 @@ find total and avergae
 
 
 
-function mul(a,b)
+//     const values =
+//     {
+//         a:50,
+//         b:60,
+//         c:function()
+//         {
+//            console.log( this.a+this.b );
+            
+//         }
+        
+//     }
+// values.c()
+
+
+
+
+// ========================================= ============================================== ==========================
+
+
+//               class
+
+
+
+// class fruit{
+//     constructor(name)
+//     {
+//         this.name = name
+//     }
+//     method()
+//     {
+//         console.log("Hello my name is : "+this.name);
+//     }
+// }
+
+// let fruits = new fruit("Apple");
+// console.log(fruits);
+
+
+// fruits.method();
+
+
+// class a
+// {
+//     constructor(name)
+//     {
+//         this.name = name;
+//     }
+
+//     method()
+//     {
+//         console.log("my Name is : "+this.name);
+//     }
+// }
+
+// const obj = new a("Raj");
+// obj.method();
+
+// class b extends a
+// {
+//     constructor(name,age)
+//     {
+//         super(name);
+//         this.age = age;
+//     }
+//     eligible()
+//     {
+//         console.log("My name is "+this.name+" and My age is "+this.age);
+//     }
+// }
+
+// const obj1 = new b("Kavin",22);
+// obj1.method();
+// obj1.eligible();
+
+
+
+// const user = {
+//     firstname : "kavippiriyan",
+//     lastname : "S",
+//     fullname : function()
+//     {
+//         console.log("My name is : "+this.firstname+" "+this.lastname);
+//     }
+// }
+
+// user.fullname();
+
+
+// const user1 = {
+//     firstname : "kavippiriyan",
+//     lastname : "S",
+//     get fullname()
+//     {
+//         console.log("My name is : "+this.firstname+" "+this.lastname);
+//     }
+// }
+
+// user1.fullname;
+
+
+
+// const user1 = {
+//     firstname : "kavippiriyan",
+//     lastname : "S",
+//     get fullname()
+//     {
+//         console.log("My name is : "+this.firstname+" "+this.lastname);
+//     },
+//     set fullname(name)
+//     {
+//         const names = name.split(" ");
+//         this.firstname = names[0];
+//         this.lastname = names[1];
+//     }
+// }
+
+// user1.fullname;
+// user1.fullname ="Kavippiriyan S"
+// user1.fullname;
+
+
+////                practice getter setter method
+
+
+// class circle
+// {
+//     constructor(a,b)
+//     {
+//         this.a = a;
+//         this.b = b;
+//     }
+//     get diameter()
+//     {
+//         console.log(this.a+this.b);
+//     }
+//     set diameter(value)
+//     {
+//         this.a = c;
+//         this.b = d;
+
+//     }
+// }
+
+// const obj = new circle(5,2);
+// obj.diameter;
+// const [c,d]=[1,2];
+// obj.diameter = c,d;
+// obj.diameter;
+
+
+//  ========================================= =================================================== ====================
+
+
+                    // static
+
+
+// class add               
+// {   
+//     static variable = "This is Kavippiriyan!"
+//     static method()
+//    {
+//     console.log("Hello World! "+this.variable)
+//    }
+// }
+
+// add.method();
+// console.log(add.variable);
+
+//              singleton pattern
+
+
+
+////             used for create a database 
+
+// class Database
+// {
+//     static instance = null;
+//     static getinstance()
+//     {
+//         if(!Database.instance)
+//         {
+//             Database.instance=new Database();
+//         }
+//         return Database.instance;
+//     }
+//     query(sql)
+//     {
+
+//     }
+// }
+
+// const db1 = Database.getinstance();
+
+
+//  ===================================   ================================================= ========================
+
+
+///            proto
+
+
+// const obj1 = {
+//     name:"kavippiriyan",
+//     age : 22, 
+//     info: function(){
+//         console.log(this.name+" age is : "+age);
+//     }
+
+// }
+
+// const obj2 = Object.create(obj1);
+
+
+
+function user(name)
 {
-    console.log(this.name+" got this marks in english :"+(a-b));
+    this.name=name;
 }
 
-mul(50,30);
+
+user.prototype.type = function()
+{
+    console.log("My name is: "+ this.name);
+}
+
+const person1 = new user("Don");
+const person2 = new user("The Legend");
+
+person1.type ();
+person2.type ();
