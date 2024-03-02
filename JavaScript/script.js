@@ -371,18 +371,198 @@ for(name in names)
 
 // let person ={
 //     name:"kavippiriyan",
-//     name:"kavippiriyan S",
-//     name:"kavippiriyan S"
+//     name:"Praveen M",
+//     name:"Naveen A"
 // }
 
 // console.log(person);
 
+// let name1 =Symbol()
+// let name2 = Symbol()
+// let name3 = Symbol()
+
 // let person1 ={
-//     [Symbol()]:"kavippiriyan",
-//     [Symbol()]:"kavippiriyan",
-//     [Symbol()]:"kavippiriyan"
+//     name1:"kavippiriyan",
+//     name2:"Praveen M",
+//     name3:"Naveen A"
 // }
 
-// console.log(person1);
+// console.log(person1.name1);
+// console.log(person1.name2);
+// console.log(person1.name3);
+// // console.log(person1);
+
+
+// var a =Symbol("a")
+// console.log(a.description);
+// console.log(a.toString());
+
 
 // ========================================= ======================================= ===============================
+
+//    objects
+
+
+// creating object
+
+
+
+// obj = {
+//     type:"Fruit",
+//     name :"apple",
+
+// }
+// console.log(obj);
+
+// let obj1 = new Object();
+
+// obj1.type = "Fruit",
+// obj1.name = "mango"
+
+// console.log(obj1);
+
+
+// console.log(obj.name);
+// console.log(obj1.name);
+
+
+// let nameofthefruit = 'name'
+
+// obj1[nameofthefruit] = "Banana"
+// console.log(obj1.name);
+
+
+// const users = {
+//     name:"Deja",
+//     town : "Hyderabad",
+//     address:{
+
+//     }
+// }
+
+// ======================================= ============================================ ==========================
+
+// class and objects
+
+
+// class student
+// {
+//     constructor(name,age)
+//     {
+//         this.name = name,
+//         this.age = age
+//     }
+//     student1()
+//     {
+//         console.log(" Welcome "+this.name);        
+//        // method chaining
+//         return this
+//     }
+
+//     student2()
+//     {
+//         console.log(" Welcome "+this.name);        
+//     }
+//     welcome()
+//     {
+//         console.log("you are Welcome!");
+//     }
+// }
+// let obj = new student("Kavippiriyan",22)
+// let obj1 = new student("Praveen",22)
+// obj.student1()
+// obj1.student2()
+
+
+// class students extends student
+// {
+//     constructor(name,age)
+//     {
+//         super(name,age)
+//         this.name = name
+//         this.age = age
+//     }
+//     thankyou()
+//     {
+//         console.log(this.name+" Thank you for you coming");
+//          // this is used for method chaining
+//          return this
+//     }
+//     //override
+//     welcome()
+//     {
+//         console.log("you are Welcome sir!");
+//         // this is used for method chaining
+//         return this
+//     }
+// }
+
+// let obj3 = new students("Priya",22)
+// // obj3.student1()
+// // obj3.thankyou()
+// // obj3.welcome();
+
+// // method chaining
+// obj3.student1().thankyou().welcome()
+
+
+
+// prototype
+
+
+// class A{
+//     name = "kavippiriyan"
+
+//     fun()
+//     {
+//         console.log( this.name)
+//     }
+//     name = function name() {
+//         console.log(this.name);
+//     }
+// }
+
+// let obj = new A()
+// console.log(obj.name)
+
+
+// function prototype(name)
+// {
+//     this.name = name
+
+// }
+
+// prototype.prototype.method = function()
+// {
+//     console.log(this.name+" Welcome");
+// }
+
+// let obj = new prototype("kavippiriyan")
+// obj.method()
+
+
+// get and set 
+
+
+class bike
+{
+    constructor(name)
+    {
+        this._name = name
+    }
+    get bike()
+    {
+        console.log(this._name+" You got!");
+    }
+
+    set bike(name)
+    {
+        if(name!="Apache")
+        {
+            name= "Apache"
+            this._name = name
+        }
+    }
+}
+const obj = new bike("Himalayan");
+obj.bike
