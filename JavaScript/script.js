@@ -544,25 +544,197 @@ for(name in names)
 // get and set 
 
 
-class bike
-{
-    constructor(name)
-    {
-        this._name = name
-    }
-    get bike()
-    {
-        console.log(this._name+" You got!");
-    }
+// class bike
+// {
+//     constructor(name)
+//     {
+//         this._name = name
+//     }
+//     get bike()
+//     {
+//         console.log(this._name+" You got!");
+//     }
 
-    set bike(name)
-    {
-        if(name!="Apache")
-        {
-            name= "Apache"
-            this._name = name
-        }
-    }
-}
-const obj = new bike("Himalayan");
-obj.bike
+//     set bike(name)
+//     {
+//         if(name!=="Apache")
+//         {
+//             name= "Apache"
+//             this._name = name
+//         }
+//         else
+//         {
+//             this._name =name;
+//         }
+//     }
+// }
+// const obj = new bike("Himalayan");
+// obj.bike
+// obj.bike="pulser"
+// obj.bike
+// obj.bike="Fz"
+// obj.bike
+
+//                       modules
+
+// import car, {fuel as diesel,air,name} from './module.js'
+
+
+// let car1 = new car()
+// car1.method()
+
+
+// diesel()
+// air()
+// console.log(name);
+
+// ================= =================== ============= ============= ========= ========== ======= ====================
+
+
+//                string methods
+
+
+
+let str1 = "This is March month"
+let str2 = "  Iam a tester "
+
+// slice(start, end)
+
+// console.log( str1.slice(5,14));
+// console.log(str1.slice(0,3));
+// console.log(str1.slice(-5));
+
+// // substring(start,end), no negative values
+// console.log(str1.substring(5,14));
+// console.log(str1.substring(1,3));
+
+
+// //substr(start,length)
+
+// console.log(str1.substr(5,14));
+// console.log(str1.substr(5,2));
+// console.log(str1.substr(-5));
+// console.log(str1.substr(-5,2));
+
+
+// // replace,replaceAll
+
+// console.log(str1.replace("This",'next'));
+// console.log(str1.replace("is","month").length );
+// console.log(str1.length);
+// console.log(str2.replaceAll(" ","Hi"));
+// console.log(str1.replace("March","October"));
+// console.log(str1.replace("March","October").length);
+
+// //upper case, lowercase
+
+// console.log(str1.toUpperCase());
+// console.log(str1.toLowerCase());
+
+//trim 
+
+// console.log(str2.length);
+// console.log(str2.trim());
+// console.log(str2.trim().length);
+// console.log(str2.trimStart());
+// console.log(str2.trimStart().length);
+// console.log(str2.trimEnd());
+// console.log(str2.trimStart().length);
+
+
+// padstart 
+
+// console.log(str2.padEnd(18,"x"));
+
+// console.log(str2.padStart(18,"x"));
+
+
+//charAt, charcodeAt, at
+
+// console.log(str2.charAt(3));
+// console.log(str2.charCodeAt(3));
+// console.log(str2[3]);
+
+
+// indexof ,lastindexof ,search , includes
+
+
+// console.log(str2.indexOf('a'));
+// console.log(str2.lastIndexOf('a'));
+
+
+// console.log(str2.search('tester'));
+// console.log(str2.search('testerr'));
+// console.log(str2.includes('tester'));
+// console.log(str2.includes('testerr'));
+
+// startswith , endswith
+
+
+// console.log(str2.startsWith(' '));
+// console.log(str2.startsWith('t'));
+
+// console.log(str2.endsWith(' '));
+// console.log(str2.endsWith('o'));
+
+// concat, split, repeat
+
+
+// console.log(str2.concat("hello"));
+
+// console.log(str2.split(" "));
+
+// console.log(str2.repeat(2));
+
+
+// ========================================= =========================== =========================== ======================
+
+
+//  Array Methods
+
+
+let arr = [1,2,3,4,5,6]
+let arr1 = [1,2,3,[4,5,6]]
+
+// console.log(arr);
+// console.log(arr.length);   //length
+
+
+// console.log(arr.push(7));  // push
+// console.log(arr);
+
+
+// console.log(arr[2]);
+
+// console.log(arr1[3][0]);   //ofmethod
+
+// console.log(arr1.pop());   // pop
+// console.log(arr1);
+
+
+// console.log(arr.shift());      //shif
+// console.log(arr);
+
+// console.log(arr.unshift(1));   //unshift
+// console.log(arr);
+
+
+// console.log(arr.splice(0,1));
+// console.log(arr);
+
+
+// console.log(arr.splice(0,1,1,2));
+// console.log(arr);
+
+
+// console.log(arr.splice(3,1)); 
+// console.log(arr); 
+
+// console.log(arr.splice(3,0,4));
+// console.log(arr);
+
+//         slice(starting index , ending index)
+// ending index not include
+
+console.log(arr.slice(0,1));
+
