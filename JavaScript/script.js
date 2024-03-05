@@ -1,4 +1,4 @@
-//    Variables
+//   *** Variables  ***
 
 
 /*
@@ -66,7 +66,7 @@ console.log(name);
 // console.log(a);
 
 // ========================================= ======================================= ===============================
-//  try,catch ,finally
+// **** try,catch ,finally  ****
 
 
 // try{
@@ -128,7 +128,7 @@ console.log(name);
 // myfuntion(1,2);
 // ========================================= ======================================= ===============================
 
-// Switch case
+// *** Switch case  ***
 
 
 // switch (new Date().getDay()-1) {
@@ -170,7 +170,7 @@ console.log(name);
 
 
 // ========================================= ======================================= ===============================
-//    for in, for of
+//   *** for in, for of  ***
 
 
 
@@ -206,7 +206,7 @@ for(name in names)
 
 // ========================================= ======================================= ===============================
 
-//  while
+//  *** while  ***
 
 // a = 10;
 // while (true) {
@@ -220,7 +220,7 @@ for(name in names)
 
 // ========================================= ======================================= ===============================
 
-// do while
+// *** do while ***
 
 
 // a=10;
@@ -234,7 +234,7 @@ for(name in names)
 
 // ========================================= ======================================= ===============================
 
-//         functions
+//       ***  functions ***
 
 
 // function add(a,b)
@@ -255,7 +255,7 @@ for(name in names)
 // fun("fruit","apple");
 
 
-//   Arbitary arguments
+// ***  Arbitary arguments ***
 
 // let fun = function()
 // {
@@ -282,7 +282,7 @@ for(name in names)
 
 // ========================================= ======================================= ===============================
 
-// call function
+// **** call function ***   we can call other functions for out current functions
 
 // var name="kavippiriyan";
 // let a = function()
@@ -316,7 +316,7 @@ for(name in names)
 
 // ========================================= ======================================= ===============================
 
-// apply
+//  **** apply   ****     it is used to insert the values in array type
 
 // names = {
 //     string:"Hi Hello"
@@ -330,7 +330,7 @@ for(name in names)
 
 // ========================================= ======================================= ===============================
 
-//       Bind
+//     ****  Bind  ****     we can store the methods in one variable and after we can call that variable as a function
 // names = {
 //     string:"Hi Hello"
 // }
@@ -367,7 +367,7 @@ for(name in names)
 
 // ================================================================= ==============================================
 
-//     symbol
+//   ****  symbol  ****
 
 // let person ={
 //     name:"kavippiriyan",
@@ -400,7 +400,7 @@ for(name in names)
 
 // ========================================= ======================================= ===============================
 
-//    objects
+//  ****  objects  ****
 
 
 // creating object
@@ -442,7 +442,7 @@ for(name in names)
 
 // ======================================= ============================================ ==========================
 
-// class and objects
+// **** class and objects  ****
 
 
 // class student
@@ -507,7 +507,7 @@ for(name in names)
 
 
 
-// prototype
+//  *** prototype  ***
 
 
 // class A{
@@ -575,7 +575,7 @@ for(name in names)
 // obj.bike="Fz"
 // obj.bike
 
-//                       modules
+//                     ***  modules  ***
 
 // import car, {fuel as diesel,air,name} from './module.js'
 
@@ -591,25 +591,25 @@ for(name in names)
 // ================= =================== ============= ============= ========= ========== ======= ====================
 
 
-//                string methods
+//         ***       string methods  ***
 
 
 
 // let str1 = "This is March month"
 // let str2 = "  Iam a tester "
 
-// slice(start, end)
+// **** slice(start, end) ****
 
 // console.log( str1.slice(5,14));
 // console.log(str1.slice(0,3));
 // console.log(str1.slice(-5));
 
-// // substring(start,end), no negative values
+// *** substring(start,end), no negative values ** **
 // console.log(str1.substring(5,14));
 // console.log(str1.substring(1,3));
 
 
-// //substr(start,length)
+// ** ** substr(start,length) ** **
 
 // console.log(str1.substr(5,14));
 // console.log(str1.substr(5,2));
@@ -617,7 +617,7 @@ for(name in names)
 // console.log(str1.substr(-5,2));
 
 
-// // replace,replaceAll
+// *** replace,replaceAll ***
 
 // console.log(str1.replace("This",'next'));
 // console.log(str1.replace("is","month").length );
@@ -626,12 +626,12 @@ for(name in names)
 // console.log(str1.replace("March","October"));
 // console.log(str1.replace("March","October").length);
 
-// //upper case, lowercase
+// ****** upper case, lowercase  ****
 
 // console.log(str1.toUpperCase());
 // console.log(str1.toLowerCase());
 
-//trim
+//  ***** trim ****
 
 // console.log(str2.length);
 // console.log(str2.trim());
@@ -642,21 +642,21 @@ for(name in names)
 // console.log(str2.trimStart().length);
 
 
-// padstart
+// **** padstart *****
 
 // console.log(str2.padEnd(18,"x"));
 
 // console.log(str2.padStart(18,"x"));
 
 
-//charAt, charcodeAt, at
+//  ***** charAt, charcodeAt, at ****
 
 // console.log(str2.charAt(3));
 // console.log(str2.charCodeAt(3));
 // console.log(str2[3]);
 
 
-// indexof ,lastindexof ,search , includes
+//********  indexof ,lastindexof ,search , includes ********
 
 
 // console.log(str2.indexOf('a'));
@@ -677,7 +677,7 @@ for(name in names)
 // console.log(str2.endsWith(' '));
 // console.log(str2.endsWith('o'));
 
-// concat, split, repeat
+// **** concat, split, repeat ***
 
 
 // console.log(str2.concat("hello"));
@@ -690,7 +690,7 @@ for(name in names)
 // ========================================= =========================== =========================== ======================
 
 
-//  Array Methods
+// **** Array Methods  *****
 
 
 // let arr = [1,2,3,4,5,6]
@@ -733,7 +733,7 @@ for(name in names)
 // console.log(arr.splice(3,0,4));
 // console.log(arr);
 
-//         slice(starting index , ending index)
+//        **** slice(starting index , ending index) ****
 // ending index not include
 
 // console.log(arr.slice(0,1));
@@ -741,7 +741,7 @@ for(name in names)
 // console.log(arr.slice(-1));
 
 
-//  join
+//  ***** join *****
 
 // console.log(arr.join());  // it converts array values to string
 
@@ -750,7 +750,7 @@ for(name in names)
 
 
 
-// concat, ..spread operator
+//   ****** concat, ..spread operator *****
 
 
 // console.log(arr.concat(arr1))
@@ -761,7 +761,7 @@ for(name in names)
 
 
 
-//        practice
+//      ***  practice ***
 
 
 // let Arr = [5,8,10,7,9,11];
@@ -786,7 +786,7 @@ for(name in names)
 // console.log(Arr);
 
 
-//copywithin, flat, tospliced  ,toreversed
+// ****  copywithin, flat, tospliced  ,toreversed  *****
 
 //  copyWithin(changeindex,thisindextocopy)
 // let arr = [1, 2, 3, 4, 5, 6]
@@ -803,7 +803,7 @@ for(name in names)
 
 // console.log(array.flat());
 
-//          tosplice()
+//        ***  tosplice()  ***
 
 // let arr = [1, 2, 3, 4, 5, 6]
 
@@ -854,5 +854,203 @@ for(name in names)
 // console.log(tosorted);
 //  ======================================= ========================================== ================================
 
+
+//       ****Array iteration methods***
+
+
+//   **** forEach  ***(value,index,array)    * No return and doesnot create new array *
+
+// let arr = [1,2,3,4,5];
+
+// arr.forEach((value=>
+//     {
+//         console.log(value);
+//     }))
+
+// arr.forEach((value,index)=>
+// {
+//     console.log(index+" : "+value);
+// })
+
+
+// const  arr = [1,2,[3,4,[5,6],[8,9]],[10,11]]
+
+// arr.forEach((value,index)=>
+//     {
+//         console.log(index+":"+value);
+//     })
+
+
+// let array = [
+//     {
+//         name:"kavi",age:22
+//     },
+//     {
+//         name:"praveen",age:22
+//     }
+// ]
+
+// array.forEach((value,index)=>
+// {
+//     console.log(index+" : "+value.name);
+
+// })
+
+// let arr = [1,2,3,4,5];
+
+// arr.forEach((value,index,array)=>
+// {
+//     console.log(index+" : "+value+" : "+array);
+// })
+
+
+// const array = [100,455,94046,4333.3243,394,48593]
+
+// const array1 = [];
+// let max = 0
+
+// array.forEach((value)=>
+// {
+//     if(value>max)
+//     {
+//         max=value;
+//     }
+    
+// })
+// array1.push(max)
+// console.log(array1);
+
+
+//        **** Map ***          * creating new array and it can return *
+
+
+// let array = [1,2,3,4,5]
+
+// let maparray = array.map((value)=>
+// {
+//     return value;
+// })
+
+// console.log(maparray);
+
+// let array1 = [
+//     {
+//         name:"kavi",age:22
+//     },
+//     {
+//         name:"praveen",age:20
+//     }
+// ]
+
+// let eligible = array1.map((value)=>
+// ({
+//     ...value,
+//     check :value.age>=21?"Eligible":"Not Eligible"
+// }))
+// console.log(eligible)
+
+
+
+// let eligible1 = [];
+// array1.forEach(value => {
+//     eligible1.push({
+//         ...value,
+//         check: value.age >= 21 ? "Eligible" : "Not Eligible"
+//     });
+// });
+// console.log(eligible1);
+
+
+
+// let values = array1.map(value=>
+// {
+//     return value
+// })
+// console.log(values);
+
+// array1.forEach(value=>
+//     {
+//         console.log(value);
+//     })
+
+
+// let array1 = [
+//     {
+//         name:"kavi",age:22
+//     },
+//     {
+//         name:"praveen",age:20
+//     }
+// ]
+
+// array1.forEach((value)=>
+// {
+//     value.age = value.age-=1     //forEach
+// })
+
+// console.log(array1);
+
+// array1.map((value)=>
+// {
+//     value.age = value.age+=1           // map
+// })
+
+// console.log(array1)
+
+
+//                       ***  filter  ***
+
+
+// let array1 = [
+//     {
+//         name:"kavi",age:22
+//     },
+//     {
+//         name:"praveen",age:20
+//     }
+// ]
+
+
+// const age = array1.map(value=>value.age>20)  // using map
+
+// console.log(age);                            // output like true or false
+ 
+// const age1 = array1.filter(value=>value.age>20) // using  filter
+
+// console.log(age1);                               // output values
+
+
+
+// const book = [
+//     {
+//         name:"Rich Dad Poor Dad ", author :"Robert Kiyosaki" ,year:1990
+//     },
+//     {
+//         name:"Harry Potter" ,author:"Rowling",year:1990
+//     },
+//     {
+//         name:"The Leader In You" ,author:"Dale Carnige",year:2000
+//     }
+// ]
+
+// let collections = book.filter(value=>
+    
+//         ((value.name.startsWith("Harry"))||(value.year===1990))
+//     )
+
+//     console.log(collections);
+
+
+//       *** reduce ***
+
+
+//   *****  reduce(accumulator , current value , array)initialvalue ****
+
+
+// let array = [1,2,3,4,5,6,7]
+
+// let reduce = array.reduce((total,value) =>total+value)
+
+// console.log(reduce);
 
 
