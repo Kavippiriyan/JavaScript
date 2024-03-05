@@ -1,9 +1,9 @@
 //    Variables
 
 
-/* 
+/*
 1. var
-2. let 
+2. let
 3. const
 */
 
@@ -27,7 +27,7 @@ console.log(name);
 
 */
 
-// let 
+// let
 
 /*
 let a = 10;
@@ -163,7 +163,7 @@ console.log(name);
 //         console.log("Success!");
 //         break;
 //     default:
-//         console.log("Fail")        
+//         console.log("Fail")
 // }
 
 // console.log("Try another way");
@@ -454,14 +454,14 @@ for(name in names)
 //     }
 //     student1()
 //     {
-//         console.log(" Welcome "+this.name);        
+//         console.log(" Welcome "+this.name);
 //        // method chaining
 //         return this
 //     }
 
 //     student2()
 //     {
-//         console.log(" Welcome "+this.name);        
+//         console.log(" Welcome "+this.name);
 //     }
 //     welcome()
 //     {
@@ -541,7 +541,7 @@ for(name in names)
 // obj.method()
 
 
-// get and set 
+// get and set
 
 
 // class bike
@@ -595,8 +595,8 @@ for(name in names)
 
 
 
-let str1 = "This is March month"
-let str2 = "  Iam a tester "
+// let str1 = "This is March month"
+// let str2 = "  Iam a tester "
 
 // slice(start, end)
 
@@ -631,7 +631,7 @@ let str2 = "  Iam a tester "
 // console.log(str1.toUpperCase());
 // console.log(str1.toLowerCase());
 
-//trim 
+//trim
 
 // console.log(str2.length);
 // console.log(str2.trim());
@@ -642,7 +642,7 @@ let str2 = "  Iam a tester "
 // console.log(str2.trimStart().length);
 
 
-// padstart 
+// padstart
 
 // console.log(str2.padEnd(18,"x"));
 
@@ -693,8 +693,8 @@ let str2 = "  Iam a tester "
 //  Array Methods
 
 
-let arr = [1,2,3,4,5,6]
-let arr1 = [1,2,3,[4,5,6]]
+// let arr = [1,2,3,4,5,6]
+// let arr1 = [1,2,3,[4,5,6]]
 
 // console.log(arr);
 // console.log(arr.length);   //length
@@ -719,7 +719,7 @@ let arr1 = [1,2,3,[4,5,6]]
 // console.log(arr);
 
 
-// console.log(arr.splice(0,1));
+// console.log(arr.splice(0,1));  //splice
 // console.log(arr);
 
 
@@ -727,8 +727,8 @@ let arr1 = [1,2,3,[4,5,6]]
 // console.log(arr);
 
 
-// console.log(arr.splice(3,1)); 
-// console.log(arr); 
+// console.log(arr.splice(3,1));
+// console.log(arr);
 
 // console.log(arr.splice(3,0,4));
 // console.log(arr);
@@ -736,5 +736,123 @@ let arr1 = [1,2,3,[4,5,6]]
 //         slice(starting index , ending index)
 // ending index not include
 
-console.log(arr.slice(0,1));
+// console.log(arr.slice(0,1));
+// console.log(arr.slice(2,5));
+// console.log(arr.slice(-1));
+
+
+//  join
+
+// console.log(arr.join());  // it converts array values to string
+
+// console.log(arr.reverse());  // reverse the original array
+// console.log(arr.reverse());
+
+
+
+// concat, ..spread operator
+
+
+// console.log(arr.concat(arr1))
+// joining
+// console.log(...arr,...arr1);
+
+// console.log([arr,arr1]);
+
+
+
+//        practice
+
+
+// let Arr = [5,8,10,7,9,11];
+
+// let splice =Arr.splice(3,3)
+// console.log(splice);
+
+// console.log(Arr);
+// console.log(Arr.push(17,19,111));
+// console.log(Arr);
+
+// console.log(Arr.unshift(100));
+// console.log(Arr);
+
+// console.log(Arr.push(200,1000));
+// console.log(Arr);
+// console.log(Arr.length);
+
+// console.log(Arr.length/2)
+
+// console.log(Arr.splice(Arr.length/2,0,0));
+// console.log(Arr);
+
+
+//copywithin, flat, tospliced  ,toreversed
+
+//  copyWithin(changeindex,thisindextocopy)
+// let arr = [1, 2, 3, 4, 5, 6]
+// console.log(arr);
+
+
+// console.log(arr.copyWithin(0,4));
+// console.log(arr.copyWithin(3,2));
+
+
+//    flat
+
+// let array = [[1,2],[3,4],[5,6]];
+
+// console.log(array.flat());
+
+//          tosplice()
+
+// let arr = [1, 2, 3, 4, 5, 6]
+
+// let tosplice = arr.toSpliced(2,2)
+// console.log(tosplice);
+// console.log(arr);
+
+// let tosplice1 = arr.toSpliced(0,0)
+// console.log(tosplice1);
+// console.log(arr);
+
+// let tosplice2 = arr.toSpliced(-1,2)
+// console.log(tosplice2);
+// console.log(arr);
+
+// let tosplice2 = arr.toSpliced(-1,2,3)
+// console.log(tosplice2);
+// console.log(arr);
+
+
+
+// const array = ["good","evening","all"]
+
+// console.log(array.reverse());
+// console.log(array);
+// console.log(array.reverse());
+// console.log(array);
+
+// console.log(array.toReversed());
+// console.log(array);
+
+// const toReversed = array.toReversed()
+// console.log(toReversed);
+// console.log(array);
+
+
+//    sort , tosorted
+
+// const array = ["good","evening","all"]
+
+// console.log(array.sort());
+// console.log(array);
+
+// console.log(array.reverse());
+
+
+// let tosorted = array.toSorted()
+// console.log(tosorted);
+//  ======================================= ========================================== ================================
+
+
 
