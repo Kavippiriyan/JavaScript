@@ -1054,3 +1054,30 @@ for(name in names)
 // console.log(reduce);
 
 
+//  *** Fill    (value,start,end)  it affects the real array ***
+
+//  let a = [1,2,3,4,5,6];
+
+// a.fill(100)
+
+// console.log(a);
+
+// a.fill(150,3,5)
+// console.log(a);
+
+
+// **** Every, some ****
+
+// Every all condition must be satisfied , output - boolean
+
+// const array =["apple","mango","grape"]
+
+
+// console.log( array.every(value=>value.length%2!==0)); 
+
+//some Atleast one conditon must be satisfied ,output - boolean
+
+// const array =["apple","mango","grape","banana"]
+
+
+// console.log( array.some(value=>value.length%2===0)); 
