@@ -1,6 +1,8 @@
 //   *** Variables  ***
 
 
+
+
 /*
 1. var
 2. let
@@ -1228,6 +1230,64 @@ for(name in names)
 //     .catch(() => console.log("Your request was cancelled"));
 
 
+// const img1 = new Promise((resolve, reject) => {
+//     var uploaded = true
+//     if (uploaded) {
+//         setTimeout(resolve, 1000, "img1 uploaded succesfully")
+//     }
+//     else {
+//         reject("img1 Error in upload");
+//     }
+// })
+
+// const img2 = new Promise((resolve, reject) => {
+//     var uploaded = true
+//     if (uploaded) {
+//         setTimeout(resolve, 3000, "img2 uploaded succesfully")
+//     }
+//     else {
+//         reject("img2 Error in upload");
+//     }
+// })
+
+// const img3 = new Promise((resolve, reject) => {
+//     var uploaded = true
+//     if (uploaded) {
+//         setTimeout(resolve, 5000, "img3 uploaded succesfully")
+//     }
+//     else {
+//         reject("img3 Error in upload");
+//     }
+// })
+
+// Promise.all([img1, img2, img3])      // all values have to success, with no pending
+//     .then((message) => console.log(message))
+//     .catch((message) => console.log(message));
+
+// Promise.allSettled([img1, img2, img3])  //  with no pending all values has to be executed
+//     .then((message) => console.log(message))
+//     .catch((message) => console.log(message));
+
+// Promise.any([img1, img2, img3])   // if any one value will success it will succeed
+// .then((message) => console.log(message))
+// .catch((message) => console.log(message));
+
+// Promise.race([img1, img2, img3])   // if all values true or false that time it will return based on time otherwise one value will false it will give error value
+// .then((message) => console.log(message))
+// .catch((message) => console.log(message));
+
+
+//  *** async , await ***  async always return promise
+
+
+
+
+// async function name1() {
+//     return "Hello"
+// }
+// console.log(name1());
+
+
 const img1 = new Promise((resolve, reject) => {
     var uploaded = true
     if (uploaded) {
@@ -1258,18 +1318,9 @@ const img3 = new Promise((resolve, reject) => {
     }
 })
 
-// Promise.all([img1, img2, img3])      // all values have to success, with no pending
-//     .then((message) => console.log(message))
-//     .catch((message) => console.log(message));
-
-// Promise.allSettled([img1, img2, img3])  //  with no pending all values has to be executed
-//     .then((message) => console.log(message))
-//     .catch((message) => console.log(message));
-
-// Promise.any([img1, img2, img3])   // if any one value will success it will succeed
-// .then((message) => console.log(message))
-// .catch((message) => console.log(message));
-
-// Promise.race([img1, img2, img3])   // if all values true or false that time it will return based on time otherwise one value will false it will give error value
-// .then((message) => console.log(message))
-// .catch((message) => console.log(message));
+async function img()
+{
+    console.log("please upload your images");
+    await img1,img2,img3
+    console.log("Thank you!");
+}
