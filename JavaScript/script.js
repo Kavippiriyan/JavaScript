@@ -915,7 +915,7 @@ for(name in names)
 //     {
 //         max=value;
 //     }
-    
+
 // })
 // array1.push(max)
 // console.log(array1);
@@ -1014,7 +1014,7 @@ for(name in names)
 // const age = array1.map(value=>value.age>20)  // using map
 
 // console.log(age);                            // output like true or false
- 
+
 // const age1 = array1.filter(value=>value.age>20) // using  filter
 
 // console.log(age1);                               // output values
@@ -1034,7 +1034,7 @@ for(name in names)
 // ]
 
 // let collections = book.filter(value=>
-    
+
 //         ((value.name.startsWith("Harry"))||(value.year===1990))
 //     )
 
@@ -1081,3 +1081,195 @@ for(name in names)
 
 
 // console.log( array.some(value=>value.length%2===0)); 
+
+
+
+//  Primitive Wrapper Types
+
+/* 
+1. String
+2. Number
+3. Boolean
+*/
+
+//  Number
+
+// console.log("Max Numeric value : "+Number.MAX_VALUE);
+// console.log("Min Numeric value : "+Number.MIN_VALUE);
+
+
+// var num = 123456;
+// var num1 = "higher"
+// console.log(Number.isNaN(num));
+// console.log(Number.isNaN(num1));
+
+
+// var number = 445;
+// var number1 = Infinity;
+
+// console.log(Number.isFinite(number));
+// console.log(Number.isFinite(number1));
+
+
+
+// var float = "3.14"
+// console.log(Number.parseFloat(float));
+
+// var number = ("255",8);
+
+// console.log(Number.parseInt(number));
+
+
+
+// var fixed = 1245.354646;
+
+// console.log(fixed.toFixed(4));
+// console.log(fixed.toFixed(1));
+// console.log(fixed.toFixed(0));
+
+
+// var precision = 4567;
+// console.log(precision.toPrecision(1));
+
+
+// let exponential = 1524.3454
+
+// console.log(exponential.toExponential(2));
+// console.log(exponential.toExponential(0));
+
+
+//    **** asynchronous ****
+
+
+// console.log("Hi");
+
+
+// setTimeout(()=>
+// {
+//     console.log("method1");
+// },(5000))
+
+// setTimeout(()=>
+// {
+//     console.log("method2");
+// },(2000))
+
+// setTimeout(()=>
+// {
+//     console.log("method3");
+// },(7000))
+
+
+// console.log("Hello");
+
+// let method = {
+
+//     method()
+//     {
+//         console.log("Im the method function");
+//     }
+// }
+// method.method()
+
+// setInterval(function()
+// {
+//     console.log("Click Here!");
+// },(2000))
+
+
+// promise
+
+// let food = new Promise((resolve, reject) => {
+//     let order = false;
+//     if (order) {
+//         resolve()
+//     }
+//     else {
+//         reject()
+//     }
+// })
+
+// food.then(() => console.log("order list\n 1. Chicken Parrota \n 2. Pepsi \n 3. Romainan Rottin \n 4. Chicken Fried Rice \n 5. pannerbutter"))
+//     .catch(() => console.log("cancel list\n 1. paneer butter"));
+
+// function food() {
+//     return new Promise((resolve, reject) => {
+//         let order = false;
+//         if (order) {
+//             resolve()
+//         }
+//         else {
+//             reject()
+//         }
+//     })
+
+
+// }
+
+// food().then(() => console.log("order list\n 1. Chicken Parrota \n 2. Pepsi \n 3. Romainan Rottin \n 4. Chicken Fried Rice \n 5. pannerbutter"))
+//     .catch(() => console.log("cancel list\n 1. paneer butter"));
+
+
+// function instagram_request(value) {
+//     return new Promise((resolve, reject) => {
+//         if (value == 0) {
+//             resolve()
+//         }
+//         else {
+//             reject()
+//         }
+
+
+//     })
+// }
+
+// let request = prompt("You got one instagram request \n 1. press 0 to accept \n 2. press 1 to reject")
+// instagram_request(request).then(() => console.log("Your request was accepted"))
+//     .catch(() => console.log("Your request was cancelled"));
+
+
+const img1 = new Promise((resolve, reject) => {
+    var uploaded = true
+    if (uploaded) {
+        setTimeout(resolve, 1000, "img1 uploaded succesfully")
+    }
+    else {
+        reject("img1 Error in upload");
+    }
+})
+
+const img2 = new Promise((resolve, reject) => {
+    var uploaded = true
+    if (uploaded) {
+        setTimeout(resolve, 3000, "img2 uploaded succesfully")
+    }
+    else {
+        reject("img2 Error in upload");
+    }
+})
+
+const img3 = new Promise((resolve, reject) => {
+    var uploaded = true
+    if (uploaded) {
+        setTimeout(resolve, 5000, "img3 uploaded succesfully")
+    }
+    else {
+        reject("img3 Error in upload");
+    }
+})
+
+// Promise.all([img1, img2, img3])      // all values have to success, with no pending
+//     .then((message) => console.log(message))
+//     .catch((message) => console.log(message));
+
+// Promise.allSettled([img1, img2, img3])  //  with no pending all values has to be executed
+//     .then((message) => console.log(message))
+//     .catch((message) => console.log(message));
+
+// Promise.any([img1, img2, img3])   // if any one value will success it will succeed
+// .then((message) => console.log(message))
+// .catch((message) => console.log(message));
+
+// Promise.race([img1, img2, img3])   // if all values true or false that time it will return based on time otherwise one value will false it will give error value
+// .then((message) => console.log(message))
+// .catch((message) => console.log(message));

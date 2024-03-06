@@ -1,9 +1,11 @@
 export default class car
 {
+   
     method ()
     {
         console.log("Iam the method inside the car class");
     }
+    
 }
 
 export function fuel()
