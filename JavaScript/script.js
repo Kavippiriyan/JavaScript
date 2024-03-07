@@ -1320,7 +1320,19 @@ const img3 = new Promise((resolve, reject) => {
 
 async function img()
 {
+    try{
     console.log("please upload your images");
-    await img1,img2,img3
-    console.log("Thank you!");
-}
+    console.log( await img1);
+        
+    }
+    catch(error)
+    {
+        console.log(error);
+    }
+    finally
+    {
+        console.log("Thank you!");
+    }
+} 
+
+img()
