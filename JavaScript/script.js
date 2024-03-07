@@ -1423,7 +1423,7 @@ for(name in names)
 
 //  Regular Expression
 
-
+    //   *** Modifiers  ***
 // var sentence = "Hello Everybody all of you fine?"
 // var sentence1 = /y/g;   // here find y element and g is get all
 // var sentence2 = /e/ig;   // here find e element and i is insensitive (upper and lower) g is get all
@@ -1445,6 +1445,7 @@ for(name in names)
 // console.log(sentence.match(sentence2));
 // console.log(sentence.match(sentence3));
 
+//    ***  brackets  ***
 
 // var a = "The beautiful Window1011";
 // var b = /[e]/g;
@@ -1456,8 +1457,9 @@ for(name in names)
 // console.log(a.match(d));
 // console.log(a.match(e));
 
+//   *** Meta charecters ***
 
-var word = "Today 3@ is % 9a \n good \t day!1"
+// var word = "Today 3@ is % 9a \n good \t day!1"
 
 // var checking =/\w/g;
 // var checking1 =/\W/g; // w - give without special charecter, W-give only special charecter
@@ -1481,6 +1483,56 @@ var word = "Today 3@ is % 9a \n good \t day!1"
 // console.log(word.search(checking7));
 // console.log(word.search(checking8));
 
+//    ****  quantifiers  ****
+
+
+// var sentence = "Iam staying in hostel 300 10 2000"
+
+// var find = /\d{3,}/gi                    // 3 or 3+ digits  
+// console.log(sentence.match(find));
+
+// var find = /\a/gi;
+// console.log(sentence.match(find));
+
+// var find = /\a*/gi;
+// console.log(sentence.match(find));  // other than a all value will consider as a space
 
 
 
+// Regex properties
+
+
+// var word = "Focus on yourself!"
+
+// var condition = /a/gim
+
+// var using_condition = condition.global
+// var using_condition1 = condition.ignoreCase
+// var using_condition2 = condition.multiline
+// console.log(using_condition);
+// console.log(using_condition1);
+// console.log(using_condition2);
+
+
+
+//  Regex methods
+
+
+var words = "Every walls has ear"
+
+var condition = /a/g;
+var exe = condition.exec(words)  //   exec --> its just executing the methods
+console.log(exe);
+
+
+var condition = /z/g;
+var exe = condition.test(words)  // test --> the condition is true or false
+console.log(exe);
+
+var condition = /a/g;
+var exe = condition.toString(words)  // toString --> it will return the conditon
+console.log(exe);
+
+var condition = /a/g;
+var exe = condition.compile(words)  // compile --> it will return the words
+console.log(exe);
