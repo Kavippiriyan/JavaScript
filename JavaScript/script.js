@@ -1288,51 +1288,159 @@ for(name in names)
 // console.log(name1());
 
 
-const img1 = new Promise((resolve, reject) => {
-    var uploaded = true
-    if (uploaded) {
-        setTimeout(resolve, 1000, "img1 uploaded succesfully")
-    }
-    else {
-        reject("img1 Error in upload");
-    }
-})
+// const img1 = new Promise((resolve, reject) => {
+//     var uploaded = true
+//     if (uploaded) {
+//         setTimeout(resolve, 1000, "img1 uploaded succesfully")
+//     }
+//     else {
+//         reject("img1 Error in upload");
+//     }
+// })
 
-const img2 = new Promise((resolve, reject) => {
-    var uploaded = true
-    if (uploaded) {
-        setTimeout(resolve, 3000, "img2 uploaded succesfully")
-    }
-    else {
-        reject("img2 Error in upload");
-    }
-})
+// const img2 = new Promise((resolve, reject) => {
+//     var uploaded = true
+//     if (uploaded) {
+//         setTimeout(resolve, 3000, "img2 uploaded succesfully")
+//     }
+//     else {
+//         reject("img2 Error in upload");
+//     }
+// })
 
-const img3 = new Promise((resolve, reject) => {
-    var uploaded = true
-    if (uploaded) {
-        setTimeout(resolve, 5000, "img3 uploaded succesfully")
-    }
-    else {
-        reject("img3 Error in upload");
-    }
-})
+// const img3 = new Promise((resolve, reject) => {
+//     var uploaded = true
+//     if (uploaded) {
+//         setTimeout(resolve, 5000, "img3 uploaded succesfully")
+//     }
+//     else {
+//         reject("img3 Error in upload");
+//     }
+// })
 
-async function img()
-{
-    try{
-    console.log("please upload your images");
-    console.log( await img1);
-        
-    }
-    catch(error)
-    {
-        console.log(error);
-    }
-    finally
-    {
-        console.log("Thank you!");
-    }
-} 
+// async function img()
+// {
+//     try{
+//     console.log("please upload your images");
+//     console.log( await img1);
 
-img()
+//     }
+//     catch(error)
+//     {
+//         console.log(error);
+//     }
+//     finally
+//     {
+//         console.log("Thank you!");
+//     }
+// } 
+
+// img()
+
+
+//    ******  object methods ******
+
+
+
+
+// const user =
+// {
+//     name: "magesh",
+//     age: 28,
+//     city: "pune",
+//     work: function () {
+//         return "Iam working as a junior automation tester";
+//     }
+// }
+
+// user.work()
+
+// document.getElementById("work").innerHTML = user.work()
+
+// const user_details =
+// {
+//     ph: "9344361040",
+//     address: "kholapur, mumbai"
+// }
+
+// Object.assign(user, user_details)
+
+// console.log(user_details.name);
+
+
+// // object cloning
+
+// const objcopy = Object.assign({}, user_details)
+
+// console.log(objcopy.ph);
+
+// // object merging
+
+
+// const objmerge = { ...user, ...user_details }
+
+// console.log(objmerge.address);
+
+
+// // delete 
+
+// delete user.age;
+// console.log(user.age);
+
+
+// function name1(firstname, lastname) {
+//     return {
+//         // firstname: firstname,
+//         // lastname: lastname
+//         //                     the 2 ways are same
+//         firstname,
+//         lastname
+//     }
+// }
+
+// console.log(name1("Kavippiriyan", "S"));
+
+
+
+// **prottype** 
+
+// let obj = 
+// {
+//     name:"Bala",
+//     age :22
+// }
+
+
+// const obj1 = 
+// {
+//     __proto__:obj,
+//     city:"Erode"
+// }
+// console.log(obj1.name);
+// console.log(obj);
+// console.log(obj1);
+
+
+//  Regular Expression
+
+
+// var sentence = "Hello Everybody all of you fine?"
+// var sentence1 = /y/g;   // here find y element and g is get all
+// var sentence2 = /e/ig;   // here find e element and i is insensitive (upper and lower) g is get all
+// console.log(sentence.match(sentence2));
+// var sentence2 = /E/i;   // here find e element and i is insensitive (upper and lower) g is get all
+
+// console.log(sentence.match(sentence1));
+// console.log(sentence.match(sentence2));
+
+// var sentence = "Hello Everybody all of you fine?"
+// var sentence1 = /y/ig;  
+// console.log(sentence.search(sentence1));
+
+var sentence = "Hello Everybody all of you fine?"
+var sentence1 = new RegExp("H","g")  
+var sentence2 = new RegExp("i","gm")  // m is more than one line
+var sentence3 = new RegExp("l","ig") 
+console.log(sentence.match(sentence1));
+console.log(sentence.match(sentence2));
+console.log(sentence.match(sentence3));
