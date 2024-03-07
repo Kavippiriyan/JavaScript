@@ -1437,10 +1437,50 @@ for(name in names)
 // var sentence1 = /y/ig;  
 // console.log(sentence.search(sentence1));
 
-var sentence = "Hello Everybody all of you fine?"
-var sentence1 = new RegExp("H","g")  
-var sentence2 = new RegExp("i","gm")  // m is more than one line
-var sentence3 = new RegExp("l","ig") 
-console.log(sentence.match(sentence1));
-console.log(sentence.match(sentence2));
-console.log(sentence.match(sentence3));
+// var sentence = "Hello Everybody all of you fine?"
+// var sentence1 = new RegExp("H","g")  
+// var sentence2 = new RegExp("i","gm")  // m is more than one line
+// var sentence3 = new RegExp("l","ig") 
+// console.log(sentence.match(sentence1));
+// console.log(sentence.match(sentence2));
+// console.log(sentence.match(sentence3));
+
+
+// var a = "The beautiful Window1011";
+// var b = /[e]/g;
+// var c = /[^e]/g;
+// var d = /[0]/g;
+// var e = /[^0]/g;
+// console.log(a.match(b));
+// console.log(a.match(c));
+// console.log(a.match(d));
+// console.log(a.match(e));
+
+
+var word = "Today 3@ is % 9a \n good \t day!1"
+
+// var checking =/\w/g;
+// var checking1 =/\W/g; // w - give without special charecter, W-give only special charecter
+// var checking2 = /\d/g; // d - give only numbers  D-without numbers
+// var checking3 = /\D/g;
+//  var checking4 = /\s/g;     // give only spaces
+//  var checking4 = /\S/g;     // give without spaces
+//  var checking5 = /da\b/g;     // give only Ending with da
+//  var checking6 = /\bda/g;     // give only starting with da
+//  var checking7 = /\n/g;     // which place \n that charecter is there
+//  var checking8 = /\t/g;     // which place \n that charecter is there
+
+
+// console.log(word.match(checking));
+// console.log(word.match(checking1));
+// console.log(word.match(checking2));
+// console.log(word.match(checking3));
+// console.log(word.match(checking4));
+// console.log(word.match(checking5));
+// console.log(word.match(checking6));
+// console.log(word.search(checking7));
+// console.log(word.search(checking8));
+
+
+
+
