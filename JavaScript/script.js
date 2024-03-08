@@ -1423,7 +1423,7 @@ for(name in names)
 
 //  Regular Expression
 
-    //   *** Modifiers  ***
+//   *** Modifiers  ***
 // var sentence = "Hello Everybody all of you fine?"
 // var sentence1 = /y/g;   // here find y element and g is get all
 // var sentence2 = /e/ig;   // here find e element and i is insensitive (upper and lower) g is get all
@@ -1518,21 +1518,101 @@ for(name in names)
 //  Regex methods
 
 
-var words = "Every walls has ear"
+// var words = "Every walls has ear"
 
-var condition = /a/g;
-var exe = condition.exec(words)  //   exec --> its just executing the methods
-console.log(exe);
+// var condition = /a/g;
+// var exe = condition.exec(words)  //   exec --> its just executing the methods
+// console.log(exe);
 
 
-var condition = /z/g;
-var exe = condition.test(words)  // test --> the condition is true or false
-console.log(exe);
+// var condition = /z/g;
+// var exe = condition.test(words)  // test --> the condition is true or false
+// console.log(exe);
 
-var condition = /a/g;
-var exe = condition.toString(words)  // toString --> it will return the conditon
-console.log(exe);
+// var condition = /a/g;
+// var exe = condition.toString(words)  // toString --> it will return the conditon
+// console.log(exe);
 
-var condition = /a/g;
-var exe = condition.compile(words)  // compile --> it will return the words
-console.log(exe);
+// var condition = /a/g;
+// var exe = condition.compile(words)  // compile --> it will return the words
+// console.log(exe);
+
+
+//   proxy 
+
+// let customers = {
+//     name1:"kavippiriyan",
+//     name2:"praveen",
+//     name3:"kesavan",
+//     name4:"naveen",
+//     name5:"divin",
+//     name6:"sankar",
+//     name7:"tamil",
+//     name8:"arun",
+//     name9:"thiru",
+//     name10:"Raju",
+
+// }
+
+// let need_customer = {get:function(targetelement,prop){
+//     if(targetelement[prop]===targetelement[prop].startsWith("k"))
+//     {
+//       return targetelement[prop];
+//     }
+
+// }}
+
+// let proxyobj = new Proxy(customers,need_customer)
+
+
+// console.log(proxyobj);
+// console.log(proxyobj.name1);
+
+
+
+// let customers = {
+//     name1: "kavippiriyan",
+//     name2: "praveen",
+//     name3: "kesavan",
+//     name4: "naveen",
+//     name5: "divin",
+//     name6: "sankar",
+//     name7: "tamil",
+//     name8: "arun",
+//     name9: "thiru",
+//     name10: "Raju",
+
+// }
+
+// let need_customer = {
+//     get: function (targetelement, prop) {
+//         console.log("targetelement"+targetelement);
+//         console.log("prop"+prop);
+        
+//         return targetelement[prop]
+//     },
+//     set: function (targetelement, prop, value) {
+//         console.log("set - targetelement"+targetelement);
+//         console.log("set - prop"+prop);
+//         console.log("set - value"+value);
+       
+//         return targetelement[prop]=value
+//     }
+// }
+
+// let proxyobj = new Proxy(customers, need_customer)
+
+
+// console.log(proxyobj);
+
+// proxyobj.name1 = "Kavippiriyan"
+
+
+// console.log(proxyobj.name1);
+// console.log(proxyobj.name3);
+
+
+
+//  generators
+
+
