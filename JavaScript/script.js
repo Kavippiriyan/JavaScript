@@ -1615,4 +1615,16 @@ for(name in names)
 
 //  generators
 
+function* test()
+{
+    for (let i=0;i<5;i++)
+    {
+        yield i;
+    }
+}
+var obj = test();
+console.log(obj.next().value);
+console.log(obj.next().value);
+
+
 
