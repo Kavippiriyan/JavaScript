@@ -1075,20 +1075,20 @@ for(name in names)
 // const array =["apple","mango","grape"]
 
 
-// console.log( array.every(value=>value.length%2!==0)); 
+// console.log( array.every(value=>value.length%2!==0));
 
 //some Atleast one conditon must be satisfied ,output - boolean
 
 // const array =["apple","mango","grape","banana"]
 
 
-// console.log( array.some(value=>value.length%2===0)); 
+// console.log( array.some(value=>value.length%2===0));
 
 
 
 //  Primitive Wrapper Types
 
-/* 
+/*
 1. String
 2. Number
 3. Boolean
@@ -1333,7 +1333,7 @@ for(name in names)
 //     {
 //         console.log("Thank you!");
 //     }
-// } 
+// }
 
 // img()
 
@@ -1382,7 +1382,7 @@ for(name in names)
 // console.log(objmerge.address);
 
 
-// // delete 
+// // delete
 
 // delete user.age;
 // console.log(user.age);
@@ -1402,16 +1402,16 @@ for(name in names)
 
 
 
-// **prottype** 
+// **prottype**
 
-// let obj = 
+// let obj =
 // {
 //     name:"Bala",
 //     age :22
 // }
 
 
-// const obj1 = 
+// const obj1 =
 // {
 //     __proto__:obj,
 //     city:"Erode"
@@ -1434,13 +1434,13 @@ for(name in names)
 // console.log(sentence.match(sentence2));
 
 // var sentence = "Hello Everybody all of you fine?"
-// var sentence1 = /y/ig;  
+// var sentence1 = /y/ig;
 // console.log(sentence.search(sentence1));
 
 // var sentence = "Hello Everybody all of you fine?"
-// var sentence1 = new RegExp("H","g")  
+// var sentence1 = new RegExp("H","g")
 // var sentence2 = new RegExp("i","gm")  // m is more than one line
-// var sentence3 = new RegExp("l","ig") 
+// var sentence3 = new RegExp("l","ig")
 // console.log(sentence.match(sentence1));
 // console.log(sentence.match(sentence2));
 // console.log(sentence.match(sentence3));
@@ -1488,7 +1488,7 @@ for(name in names)
 
 // var sentence = "Iam staying in hostel 300 10 2000"
 
-// var find = /\d{3,}/gi                    // 3 or 3+ digits  
+// var find = /\d{3,}/gi                    // 3 or 3+ digits
 // console.log(sentence.match(find));
 
 // var find = /\a/gi;
@@ -1538,7 +1538,7 @@ for(name in names)
 // console.log(exe);
 
 
-//   proxy 
+//   proxy
 
 // let customers = {
 //     name1:"kavippiriyan",
@@ -1651,7 +1651,7 @@ for(name in names)
 //     for(let i=0;i<6;i++)
 //     {
 //         console.log(x.next().value);
-        
+
 //     }
 // }
 // var obj = gen();
@@ -1662,40 +1662,106 @@ for(name in names)
 // increment(obj1)
 
 
-function* gen()
-{
-    let j=0
-    while(true)
-    {
-        j++;
-        if(j>=5)
-        {
-            j=0
-        }
-        yield j
+// function* gen()
+// {
+//     let j=0
+//     while(true)
+//     {
+//         j++;
+//         if(j>=5)
+//         {
+//             j=0
+//         }
+//         yield j
 
-    }
-}
+//     }
+// }
 
-function increment(x)
-{
-    for(let i=0;i<6;i++)
-    {
-        console.log(x.next().value);
-        
-    }
-}
-var obj = gen();
-increment(obj);
-increment(obj);
-increment(obj);
+// function increment(x)
+// {
+//     for(let i=0;i<6;i++)
+//     {
+//         console.log(x.next().value);
 
-var obj1 = gen();
-increment(obj1)
+//     }
+// }
+// var obj = gen();
+// increment(obj);
+// increment(obj);
+// increment(obj);
 
-
-x = [1,2,3,4,5,6]
+// var obj1 = gen();
+// increment(obj1)
 
 
 
+// function* demo()
+// {
+//     var j = 0;
+//     var x = [1,2,3,4,5,6]
+//     while(true)
+//     {
+//         j++;
+//         if(j>=x.length)
+//         {
+//             j=0
+//         }
+//         yield x[j]
+//     }
 
+// }
+
+
+// function display()
+// {
+//     let obj = demo();
+
+//     for(let i=0;i<5;i++)
+//     {
+//         console.log(obj.next().value);
+//     }
+// }
+
+
+// display();
+// display();
+
+
+
+//  *** GroupBy Method ***
+
+
+// let array = [
+//     {
+//         fname: "apple", color: "red", quantity: 5
+//     },
+//     {
+//         fname: "Mango", color: "yellow", quantity: 3
+//     },
+//     {
+//         fname: "Gova", color: "green", quantity: 4
+//     },
+//     {
+//         fname: "grapes", color: "blue", quantity: 3
+//     },
+//     {
+//         fname: "banana", color: "yellow", quantity: 5
+//     }
+// ]
+
+// let result = array.reduce((previousvalue, currentvalue) => {
+//     previousvalue[currentvalue.quantity] = previousvalue[currentvalue.quantity] || []
+//     previousvalue[currentvalue.quantity].push(currentvalue)
+//     return previousvalue
+
+// }, {})
+
+// console.log(result);
+
+// let result1 = array.reduce((previousvalue, currentvalue) => {
+//     previousvalue[currentvalue.color] = previousvalue[currentvalue.color] || []
+//     previousvalue[currentvalue.color].push(currentvalue)
+//     return previousvalue
+
+// }, {})
+// console.log(result1);
