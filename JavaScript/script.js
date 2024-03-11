@@ -1846,6 +1846,10 @@ for(name in names)
 
 // *** set ***
 
+/* 1. ordered 
+   2. Unique values
+   */
+
 
 // let set = new Set([1,2,3,4,5]);
 
@@ -1870,3 +1874,102 @@ for(name in names)
 // console.log(Array.from(set));
 
 
+
+// ** Map **
+
+/*
+1. ordered
+2. key value pair (keys can be any type)
+3. duplicate values
+*/
+
+
+
+// let map = new Map(
+//     [
+//        [1,1],
+//        [2,5],
+//     ]
+// )
+
+// console.log(map.has(1));
+// console.log(map.size);
+// console.log(map.get(2));
+// console.log(map.keys());
+// console.log(map.values());
+// console.log(map.entries());
+
+// map.set("hello","hi")
+// console.log(map.entries());
+
+// map.delete('hello')
+// console.log(map.entries());
+
+// // map.clear()
+// // console.log(map.entries());
+
+// console.log(Array.from(map));
+
+// for(const[keys,values] of map)
+// {
+//     console.log("Keys : "+keys+" "+"Values : "+values); 
+
+// }
+
+
+/*  1. stack
+    2. Queue
+    3. Deck
+    */
+
+// stack:
+// let arr = [];
+
+// arr.push(1);
+// arr.push(2);
+// arr.push(3);
+
+
+// console.log(arr);
+
+// arr.pop()
+
+// console.log(arr);
+
+// Queue
+
+// const arr = []
+
+
+//     arr.push(1);
+//     arr.push(2);
+//     arr.push(3);
+
+//  console.log(arr);
+
+//     arr.shift()
+
+//     console.log(arr);
+
+
+//  deque
+
+
+// const arr = []
+
+
+// arr.push(1);
+// arr.push(2);
+// arr.push(3);
+
+// console.log(arr);
+
+// arr.shift()
+
+
+// console.log(arr);
+// arr.unshift(1);
+// console.log(arr);
+
+// arr.pop()
+// console.log(arr);
