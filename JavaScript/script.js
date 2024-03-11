@@ -1588,14 +1588,14 @@ for(name in names)
 //     get: function (targetelement, prop) {
 //         console.log("targetelement"+targetelement);
 //         console.log("prop"+prop);
-        
+
 //         return targetelement[prop]
 //     },
 //     set: function (targetelement, prop, value) {
 //         console.log("set - targetelement"+targetelement);
 //         console.log("set - prop"+prop);
 //         console.log("set - value"+value);
-       
+
 //         return targetelement[prop]=value
 //     }
 // }
@@ -1615,16 +1615,87 @@ for(name in names)
 
 //  generators
 
-function* test()
+// function* demo()
+// {
+//     for(i=0;i<6;i++)
+//     {
+//         yield i;
+//     }
+// }
+
+// const obj = demo()
+// console.log(obj.next().value);
+// console.log(obj.next().value);
+// console.log(obj.next().value);
+// console.log(obj.next().value);
+// console.log(obj.next().value);
+// console.log(obj.next().value);
+// console.log(obj.next().value);
+
+
+
+
+// function* gen()
+// {
+//     let j=0
+//     while(true)
+//     {
+//         j++;
+//         yield j
+
+//     }
+// }
+
+// function increment(x)
+// {
+//     for(let i=0;i<6;i++)
+//     {
+//         console.log(x.next().value);
+        
+//     }
+// }
+// var obj = gen();
+// increment(obj);
+// increment(obj);
+
+// var obj1 = gen();
+// increment(obj1)
+
+
+function* gen()
 {
-    for (let i=0;i<5;i++)
+    let j=0
+    while(true)
     {
-        yield i;
+        j++;
+        if(j>=5)
+        {
+            j=0
+        }
+        yield j
+
     }
 }
-var obj = test();
-console.log(obj.next().value);
-console.log(obj.next().value);
+
+function increment(x)
+{
+    for(let i=0;i<6;i++)
+    {
+        console.log(x.next().value);
+        
+    }
+}
+var obj = gen();
+increment(obj);
+increment(obj);
+increment(obj);
+
+var obj1 = gen();
+increment(obj1)
+
+
+x = [1,2,3,4,5,6]
+
 
 
 
