@@ -1613,7 +1613,7 @@ for(name in names)
 
 
 
-//  generators
+//  **** generators & iterators **** 
 
 // function* demo()
 // {
@@ -1765,3 +1765,77 @@ for(name in names)
 
 // }, {})
 // console.log(result1);
+
+
+// ****   proxy and reflect ****
+
+
+// let student =
+// {
+//     name: "Kiran",
+//     age: 20,
+//     city: "Chennai",
+//     gender: "Male"
+
+// }
+
+// let proxobj = new Proxy(student, {
+//     get: function (target, prop) {
+//         if (prop === "Pass")         //  customize value
+//         {
+//             return "you are a good student"
+//         }
+//         console.log(prop);
+//         console.log(target);
+//            return target[prop]
+//         return Reflect.get(target, prop)
+
+
+//     },
+//     set: function (target, prop, value) {
+//         if(prop==="age" && value>20)
+//         {
+//             throw new Error("Age is must below 20");;
+//         }
+//         else if(prop=="age" && value<15)
+//         {
+//             throw new Error("Age is should above 15");
+//         }
+
+//         if (prop === "age" && value > 20) {
+//             return target[prop] = 20;
+//             return Reflect.set(target,prop,20)
+//         }
+//         else 
+//         {
+//             return Reflect.set(target,prop,value)
+//         }
+//     }
+// })
+
+// console.log(student);
+// console.log(student.name);
+// console.log(" ----------- ");
+// student.age=120;
+// console.log(student.age);
+
+// console.log(proxobj);
+// console.log(proxobj.name);
+
+// try{
+//     proxobj.age = 30;
+// }
+// catch(err)
+// {   
+//     console.log(err.message);
+// }
+
+// *******  proxy customize methods *******
+
+
+
+// console.log(proxobj.Pass);
+
+// proxobj.age = 40
+// proxobj.age = 115
+// console.log(proxobj.age);
