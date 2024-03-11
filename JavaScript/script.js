@@ -1613,7 +1613,7 @@ for(name in names)
 
 
 
-//  **** generators & iterators **** 
+//  **** generators & iterators ****
 
 // function* demo()
 // {
@@ -1806,7 +1806,7 @@ for(name in names)
 //             return target[prop] = 20;
 //             return Reflect.set(target,prop,20)
 //         }
-//         else 
+//         else
 //         {
 //             return Reflect.set(target,prop,value)
 //         }
@@ -1826,7 +1826,7 @@ for(name in names)
 //     proxobj.age = 30;
 // }
 // catch(err)
-// {   
+// {
 //     console.log(err.message);
 // }
 
@@ -1839,3 +1839,34 @@ for(name in names)
 // proxobj.age = 40
 // proxobj.age = 115
 // console.log(proxobj.age);
+
+
+// **** collections  ****
+
+
+// *** set ***
+
+
+// let set = new Set([1,2,3,4,5]);
+
+// console.log(typeof set);
+
+// console.log( set.has(2));
+
+// set.add(6)
+// console.log(set);
+
+// set.delete(6)
+// console.log(set);
+
+// set.clear()
+// console.log(set);
+
+// console.log( set.size);
+
+// set.add(5);
+// console.log(set);
+
+// console.log(Array.from(set));
+
+
