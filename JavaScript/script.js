@@ -1,9 +1,5 @@
 //   *** Variables  ***
 
-import { name } from "./module";
-
-
-
 
 /*
 1. var
@@ -1978,4 +1974,3 @@ for(name in names)
 
 
 //  **** primitive wrapper types ****
-
