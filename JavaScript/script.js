@@ -1979,7 +1979,56 @@ for(name in names)
 
 
 
-let fname = new String("Kavin")
+//  String
 
-console.log(fname);
-console.log(fname.length);
+// let fname = new String("Kavin")
+
+// console.log(fname);
+// console.log(fname.length);
+
+
+//     Boolean
+
+// let statement = new Boolean(true)
+
+// if(statement)
+// {
+//     console.log("Hello");
+// }
+
+// console.log(statement);
+// console.log(statement.toString());
+// console.log(statement.valueOf());
+
+// let statement1 = new Boolean(false)
+
+// if(statement1)
+// {
+//     console.log("Hello");
+// }
+// else
+// {
+//     console.log("Hi");
+// }
+
+// console.log(statement1);
+// console.log(statement1.toString());
+// console.log(statement1.valueOf());
+
+
+//   Number
+
+// var num = new Number(1000);
+
+// console.log(num);
+// console.log("toString() : "+num.toString());
+// console.log("toString(2) : "+num.toString(2));
+// console.log("toString(8) : "+num.toString(8));
+// console.log("toString(16) : "+num.toString(16));
+// console.log("toExponential(5) : "+num.toExponential(5));
+// console.log("toExponential(3) : "+num.toExponential(3));
+// console.log("toPrecision(3) : "+num.toPrecision(3));
+// console.log("toPrecision(4) : "+num.toPrecision(4));
+// console.log("toPrecision(5) : "+num.toPrecision(5));
+// console.log("toFixed(2) : "+num.toFixed(2));
+// console.log("toLocaleString() : "+num.toLocaleString());
