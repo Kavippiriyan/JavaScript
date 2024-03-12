@@ -1,6 +1,8 @@
 //   *** Variables  ***
 
 
+
+
 /*
 1. var
 2. let
@@ -1974,3 +1976,10 @@ for(name in names)
 
 
 //  **** primitive wrapper types ****
+
+
+
+let fname = new String("Kavin")
+
+console.log(fname);
+console.log(fname.length);
