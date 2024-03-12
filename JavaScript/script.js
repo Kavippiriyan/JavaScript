@@ -1,5 +1,7 @@
 //   *** Variables  ***
 
+import { name } from "./module";
+
 
 
 
@@ -1973,3 +1975,7 @@ for(name in names)
 
 // arr.pop()
 // console.log(arr);
+
+
+//  **** primitive wrapper types ****
+
